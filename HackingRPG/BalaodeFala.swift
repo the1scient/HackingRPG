@@ -28,7 +28,10 @@ class BalaodeFala {
         }
         
     }
-
+    
+    func limparConsole() {
+        print("\u{001B}[2J")
+    }
     
     
 }

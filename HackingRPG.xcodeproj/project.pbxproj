@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		CE4719492BF3D7110031E80B /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4719482BF3D7110031E80B /* main.swift */; };
 		CE4719502BF3E0030031E80B /* BalaodeFala.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE47194F2BF3E0030031E80B /* BalaodeFala.swift */; };
+		CE4719522BF5381E0031E80B /* FaseInicio.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4719512BF5381E0031E80B /* FaseInicio.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,6 +28,7 @@
 		CE4719452BF3D7110031E80B /* HackingRPG */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HackingRPG; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE4719482BF3D7110031E80B /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		CE47194F2BF3E0030031E80B /* BalaodeFala.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalaodeFala.swift; sourceTree = "<group>"; };
+		CE4719512BF5381E0031E80B /* FaseInicio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaseInicio.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 		CE4719472BF3D7110031E80B /* HackingRPG */ = {
 			isa = PBXGroup;
 			children = (
+				CE4719512BF5381E0031E80B /* FaseInicio.swift */,
 				CE47194F2BF3E0030031E80B /* BalaodeFala.swift */,
 				CE4719482BF3D7110031E80B /* main.swift */,
 			);
@@ -125,6 +128,7 @@
 			files = (
 				CE4719502BF3E0030031E80B /* BalaodeFala.swift in Sources */,
 				CE4719492BF3D7110031E80B /* main.swift in Sources */,
+				CE4719522BF5381E0031E80B /* FaseInicio.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

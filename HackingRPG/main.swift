@@ -1,9 +1,10 @@
 import Foundation
 
-var BalaoFala = BalaodeFala()
+var Terminal = BalaodeFala();
 
-BalaoFala.pontinhos(quantidade: 5, tempo: 900000)
+var Inicio = FaseInicio();
 
-BalaoFala.digitarTexto(texto: "[JORNALISTA]: As notícias se espalham de que a Rússia irá enviar um míssil para os Estados Unidos. A população entra em terror...", tempo: 100000)
+Inicio.inicio()
 
-BalaoFala.digitarTexto(texto: "Teste 2", tempo: 100000)
+// Evitar que o programa encerre no final
+RunLoop.main.run()
