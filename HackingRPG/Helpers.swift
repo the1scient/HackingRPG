@@ -1,8 +1,5 @@
 import Foundation
 
-
-class BalaodeFala {
-    
     func digitarTexto(texto: String, tempo: Int) {
         
        let fala = Array(texto)
@@ -34,4 +31,3 @@ class BalaodeFala {
     }
     
     
-}
