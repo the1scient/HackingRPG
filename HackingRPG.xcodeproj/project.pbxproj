@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		CE4719492BF3D7110031E80B /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4719482BF3D7110031E80B /* main.swift */; };
-		CE4719502BF3E0030031E80B /* BalaodeFala.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE47194F2BF3E0030031E80B /* BalaodeFala.swift */; };
-		CE4719522BF5381E0031E80B /* FaseInicio.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4719512BF5381E0031E80B /* FaseInicio.swift */; };
+		CE4719522BF5381E0031E80B /* Start.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4719512BF5381E0031E80B /* Start.swift */; };
 		CE4719562BF5582F0031E80B /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4719552BF5582F0031E80B /* Helpers.swift */; };
+		CE4719582BF679F80031E80B /* Combats.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4719572BF679F70031E80B /* Combats.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,9 +28,9 @@
 /* Begin PBXFileReference section */
 		CE4719452BF3D7110031E80B /* HackingRPG */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HackingRPG; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE4719482BF3D7110031E80B /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		CE47194F2BF3E0030031E80B /* BalaodeFala.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalaodeFala.swift; sourceTree = "<group>"; };
-		CE4719512BF5381E0031E80B /* FaseInicio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaseInicio.swift; sourceTree = "<group>"; };
+		CE4719512BF5381E0031E80B /* Start.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Start.swift; sourceTree = "<group>"; };
 		CE4719552BF5582F0031E80B /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		CE4719572BF679F70031E80B /* Combats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Combats.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,10 +63,10 @@
 		CE4719472BF3D7110031E80B /* HackingRPG */ = {
 			isa = PBXGroup;
 			children = (
-				CE4719512BF5381E0031E80B /* FaseInicio.swift */,
-				CE47194F2BF3E0030031E80B /* BalaodeFala.swift */,
+				CE4719512BF5381E0031E80B /* Start.swift */,
 				CE4719482BF3D7110031E80B /* main.swift */,
 				CE4719552BF5582F0031E80B /* Helpers.swift */,
+				CE4719572BF679F70031E80B /* Combats.swift */,
 			);
 			path = HackingRPG;
 			sourceTree = "<group>";
@@ -129,9 +129,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE4719502BF3E0030031E80B /* BalaodeFala.swift in Sources */,
 				CE4719492BF3D7110031E80B /* main.swift in Sources */,
-				CE4719522BF5381E0031E80B /* FaseInicio.swift in Sources */,
+				CE4719582BF679F80031E80B /* Combats.swift in Sources */,
+				CE4719522BF5381E0031E80B /* Start.swift in Sources */,
 				CE4719562BF5582F0031E80B /* Helpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
