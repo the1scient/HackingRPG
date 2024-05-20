@@ -188,5 +188,64 @@ type(texto: """
     
     
 }
+
+func createChoice(choices: [String], correct: Int, wrongChoiceText: String, repeats: Bool) {
+    
+    for i in choices {
+        type(texto: "\(i)", tempo: speed)
+    }
     
     
+    let choice = Int(readLine()!)!
+    
+    if repeats == true && choice != correct {
+        type(texto: wrongChoiceText, tempo: speed)
+        createChoice(choices: choices, correct: correct, wrongChoiceText: wrongChoiceText, repeats: repeats)
+    }
+    else if repeats == false && choice == correct {
+        
+    }
+    else if repeats == true && choice == correct {
+        
+    }
+    else {
+        print(choice)
+        print(correct)
+        arrested(text: wrongChoiceText)
+    }
+
+}
+    
+func inventoryTyper(text: String) {
+    
+    print("||  \(text)   ||")
+    
+}
+
+func chooseSpeed() {
+    
+    print("Selecione a velocidade de digitação do texto (1 - 10). 1 sendo muito rápido e 10 sendo muito lento.")
+    
+    let userSpeedChoice = Int(readLine()!)!
+    
+    if userSpeedChoice < 1 || userSpeedChoice > 10 {
+        print("Opção inválida! Tente novamente.")
+        chooseSpeed()
+    }
+    
+    speed = userSpeedChoice * 10000
+    
+    print(speed)
+    
+    type(texto: "O texto ficará nessa velocidade. Você tem certeza de que deseja jogar com essa velocidade?   [S/n]", tempo: speed)
+    
+    let userNewSpeedChoice = readLine()!
+    
+    if userNewSpeedChoice == "S" || userNewSpeedChoice == "s" {
+        
+    }
+    else {
+        chooseSpeed()
+    }
+    
+}
