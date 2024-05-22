@@ -135,9 +135,179 @@ func engenhariaSocial() {
         
         // Inventário: conseguiu uma senha
         
-        quickSum(amount: 3, time: 5, chances: 3)
+       type(texto: "* Agora que tenho a senha dele, preciso escalar meus privilégios dentro do sistema. Para isso, preciso hackear o computador do Administrador do Sistema *", tempo: speed)
 
+        
     }
 
 }
+
+func findSpecificKeyword(keyword: String, size: Int) {
+    
+    type(texto: "Tente decifrar a senha do Administrador.", tempo: speed)
+    
+    // criar array de numeros aleatorios.
+    
+    var arrayRandomNumbers : [Int] = []
+    
+    // popular ele de acordo com a quantidade de letras que tem a palavra especifica.
+    
+    let keySize = keyword.count
+    
+    func generateRandomNumber() {
+        
+        let randomNumber = Int.random(in: 1..<size)
+        
+        if !arrayRandomNumbers.contains(randomNumber) {
+            arrayRandomNumbers.append(randomNumber)
+        }
+        else {
+            generateRandomNumber()
+        }
+        
+        
+    }
+    
+    for _ in 1...keySize {
+        
+        generateRandomNumber()
+        
+    }
+    
+    // ordenar o array em ordem crescente
+    
+    arrayRandomNumbers = arrayRandomNumbers.sorted()
+    
+    print(arrayRandomNumbers)
+
+    
+    var arrayStrings : [String] = []
+    
+    // criar uma array de strings populadas com A
+    
+    for _ in 1...size {
+    
+        arrayStrings.append("#")
+        
+    }
+   
+    let keywordArray = Array(keyword)
+    
+   
+    // percorrer array de strings e substituir A por letras da keyword
+    
+    for i in 0..<arrayRandomNumbers.count {
+          arrayStrings[arrayRandomNumbers[i]] = String(keywordArray[i])
+      }
+    
+    let stringFind = arrayStrings.joined(separator: "")
+        
+    print(stringFind)
+    
+    let userAttemptString = readLine()!
+    
+    if userAttemptString.lowercased() != stringFind {
+    
+        dots(quantidade: 3, tempo: speed)
+        
+        type(texto: "Resposta errada! Tente novamente.", tempo: speed)
+        
+        sleep(2)
+        
+        clear()
+        
+        findSpecificKeyword(keyword: keyword, size: size)
+        
+        
+    }
+
+    
+    
+    
+    
+}
+
+
+
+func cesarCypher(attempts: Int) {
+    
+    if attempts <= 0 {
+        
+        arrested(text: "Você foi preso pela INTERPOL em uma tentativa de hackear o governo dos Estados Unidos!")
+        
+    }
+    
+    print("[BILHETE POST-IT] ZdvkF0qi1g3qw14o!")
+    
+    type(texto: "* Talvez isso tenha algo a ver com algum certo Imperador Romano... *", tempo: speed)
+    
+    //type(texto: "WashC0nf1d3nt14l!", tempo: speed)
+    
+    let userCypherResponse = readLine()!
+    
+    if userCypherResponse.lowercased() != "washc0nf1d3nt14l!" {
+        
+        type(texto: "Tentando acessar os sistemas...", tempo: speed)
+        
+        type(texto: "Senha errada! Tente novamente.", tempo: speed)
+        
+        sleep(2)
+        
+        clear()
+        
+        cesarCypher(attempts: attempts - 1)
+        
+    }
+    
+    else {
+        
+        // Obtém informações secretas sobre o governo dos EUA e decide se vai ajudar a Rússia ou os EUA
+        
+    }
+    
+
+}
+
+func numberToKeyword(keyword: String, attempts: Int) {
+    
+    if attempts <= 0 {
+        
+        arrested(text: "Você foi preso pela INTERPOL em uma tentativa de hackear o governo dos Estados Unidos!")
+        
+    }
+    
+    let letras = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
+    
+    let arrayLetras = Array(keyword)
+    
+    var arrayNumeros : [Int] = []
+    
+    for letra in arrayLetras {
+        
+        let letraString = String(letra)
+        
+        if let index = letras.firstIndex(of: letraString) {
+            arrayNumeros.append(index + 1)
+        }
+    }
+    
+    let numeros = arrayNumeros.compactMap { $0 == nil ? nil : String($0) }
+    
+    print(numeros.joined(separator: " "))
+    
+    let userAnswer = readLine()!
+    
+    if userAnswer == keyword {
+        type(texto:"Você conseguiu completar o desafio com sucesso!" , tempo: speed)
+    }
+    else {
+        type(texto: "Tente novamente. Chances restantes: \(attempts - 1)", tempo: speed)
+        numberToKeyword(keyword: keyword, attempts: attempts - 1)
+    }
+    
+}
+
+
+
+
 

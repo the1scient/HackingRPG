@@ -4,7 +4,7 @@ import Foundation
         
        let fala = Array(texto)
        
-        setbuf(__stdoutp, nil);
+       setbuf(__stdoutp, nil)
         for i in fala {
             print(i, terminator: "")
             usleep(useconds_t(tempo))
@@ -247,5 +247,17 @@ func chooseSpeed() {
     else {
         chooseSpeed()
     }
+    
+}
+
+
+func verifyVpn(arrestedText: String) {
+    
+    if vpnActive == false {
+        
+        arrested(text: arrestedText)
+        
+    }
+    
     
 }

@@ -61,9 +61,7 @@ func callInventory(quit: Bool) {
             default:
                 print("Opção inválida")
             }
-            
-            
-            
+
         }
     
     else {
@@ -71,8 +69,5 @@ func callInventory(quit: Bool) {
         
 
     }
-    
-   
-  
-    
+
 }
