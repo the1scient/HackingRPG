@@ -1,22 +1,13 @@
 import Foundation
 
-
 var username : String = "";
-
-var speed : Int = 9000
-
-//numberToKeyword(keyword: "abacate", attempts: 3)
-//cesarCypher(attempts: 3)
-
-
-
-
+var speed : Int = 900
 
 //chooseSpeed()
 
 // Itens da VPN
 var vpnUnlocked = false
-var vpnActive = false
+var vpnActive = true
 
 //start()
 
@@ -38,10 +29,31 @@ var vpnActive = false
 //type(texto: "* Agora, preciso invadir os servidores do FBI para roubar o programa de Bruteforce deles... Vai ser bem mais trabalhoso ainda! *", tempo: speed)
 //
 
-
-findSpecificKeyword(keyword: "roberto", size: 10000)
+findSpecificKeyword(keyword: "gustavo", size: 1000)
 
 verifyVpn(arrestedText: "Você foi preso pelo FBI. \n Não camuflar seus rastros não é uma medida inteligente.")
+
+// Interceptar a ligação do Presidente e do Secretário de Defesa dos EUA
+
+// Desbloquear a senha
+
+// Hackear pentágono - phishing
+
+type(texto: "* Preciso persuadir um funcionário do Pentágono a baixar um vírus meu... Somente assim vou conseguir hackear eles! *", tempo: speed)
+
+phishingEmail(stage: 1, mailItems: [])
+
+// Desafio 4 - Escalar privilégios - cifra de césar
+//cesarCypher(attempts: 3)
+
+
+// Desafio 5 - Descobrir números
+
+clear()
+
+type(texto: "Troque número por letras... ", tempo: speed)
+
+numberToKeyword(keyword: "abacate", attempts: 3)
 
 
 

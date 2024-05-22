@@ -205,8 +205,9 @@ func findSpecificKeyword(keyword: String, size: Int) {
     print(stringFind)
     
     let userAttemptString = readLine()!
+
     
-    if userAttemptString.lowercased() != stringFind {
+    if userAttemptString.lowercased() != keyword {
     
         dots(quantidade: 3, tempo: speed)
         
@@ -224,6 +225,126 @@ func findSpecificKeyword(keyword: String, size: Int) {
     
     
     
+    
+}
+
+
+
+func phishingEmail(stage: Int, mailItems: [Int]) {
+    
+    var mailItems = mailItems
+    
+    switch stage {
+        
+    case 1:
+        
+        type(texto: "1. [URGENTE] Informações sobre sua conta de luz", tempo: speed)
+        type(texto: "2. [URGENTE] Informações sobre seu carro", tempo: speed)
+        type(texto: "3. Preciso falar com você...", tempo: speed)
+        type(texto: "4. Você ganhou um bilhete premiado!", tempo: speed)
+        
+        let userStageInput = Int(readLine()!)!
+        
+        mailItems.append(userStageInput)
+        
+        phishingEmail(stage: stage + 1, mailItems: mailItems)
+        
+        break
+        
+    case 2:
+        
+        type(texto: """
+        1. Caro(a) Amigo(a),
+        
+        Meu nome é **Babafemi** e tenho uma proposta extremamente lucrativa para você. Como príncipe de um país africano, estou enfrentando algumas dificuldades financeiras e preciso transferir uma grande quantia de dinheiro para o exterior. Sua ajuda é fundamental para que eu possa realizar essa transferência de forma segura e rápida.
+        
+        Por favor, responda a este e-mail se estiver interessado em colaborar comigo e eu compartilharei mais detalhes sobre como podemos proceder juntos.
+        
+        Ansioso por sua resposta,
+        Babafemi.
+        """, tempo: speed)
+        
+        
+        type(texto: """
+         2. Caro(a) Cliente,
+             
+             Houve uma atualização crítica em relação à sua conta de luz. Parece que houve um erro no cálculo de sua fatura e precisamos corrigi-lo imediatamente para evitar qualquer interrupção no fornecimento de energia elétrica para sua residência. Por favor, revise o arquivo anexado para mais detalhes e siga as instruções para garantir que sua conta seja ajustada corretamente.
+             
+             Lamentamos o inconveniente causado e agradecemos sua cooperação.
+             
+             Atenciosamente,
+             Schweitzer Engineering Laboratories.
+         """, tempo: speed)
+        
+        
+        type(texto: """
+         3. Prezado(a) Cliente,
+         
+         Recebemos informações críticas sobre o seu veículo. Parece que há um problema urgente que precisa ser resolvido para garantir o bom funcionamento do seu carro. Anexado a este e-mail, você encontrará um relatório detalhado sobre o estado atual do seu veículo e as etapas necessárias para resolver o problema.
+         
+         Pedimos que revise o arquivo anexado imediatamente e entre em contato conosco se precisar de assistência adicional.
+         
+         Atenciosamente,
+         Ford Motors.
+        """, tempo: speed)
+        
+        type(texto: """
+        4. Caro(a) Sortudo(a),
+        
+        Temos o prazer de informar que você é o(a) grande vencedor(a) de um bilhete premiado para um evento exclusivo! Parabéns! Para resgatar seu prêmio e garantir sua participação neste evento especial, por favor, baixe e preencha o formulário anexo.
+        
+        Não perca esta oportunidade única e aproveite ao máximo sua premiação!
+        
+        Atenciosamente,
+        Venture Ashore.
+        """, tempo: speed)
+        
+        
+        let userStageInput = Int(readLine()!)!
+        
+        mailItems.append(userStageInput)
+        
+        phishingEmail(stage: stage + 1, mailItems: mailItems)
+        
+        break
+        
+    case 3:
+        
+        type(texto: "1. `virus_principe_nigeriano.pdf`", tempo: speed)
+        type(texto: "2. `trojan_bilhete_premiado.bat`", tempo: speed)
+        type(texto: "3. `informacoes_carro_cliente345.docx`", tempo: speed)
+        type(texto: "4. `conta_de_luz.pdf`", tempo: speed)
+        
+        
+        let userStageInput = Int(readLine()!)!
+        
+        mailItems.append(userStageInput)
+        
+        phishingEmail(stage: stage + 1, mailItems: mailItems)
+        
+        break
+        
+    default:
+        
+        var mailItemsString = mailItems.map { String($0) }
+        
+        let mailString = mailItemsString.joined(separator: "")
+        
+        if mailString == "124" || mailString == "233" {
+            
+            
+            
+        }
+        else {
+            arrested(text: "Você foi preso pela Polícia Federal.")
+        }
+        
+    break
+        
+        
+        
+    }
+ 
     
 }
 
@@ -272,7 +393,7 @@ func numberToKeyword(keyword: String, attempts: Int) {
     
     if attempts <= 0 {
         
-        arrested(text: "Você foi preso pela INTERPOL em uma tentativa de hackear o governo dos Estados Unidos!")
+        arrested(text: "Os servidores da Rússia detectaram acessos estranhos aos seus servidores. \n Suspeitando que os Estados Unidos estavam invadindo seus servidores, a Rússia decide antecipar o lançamento das ogivas nucleares. \n A humanidade entra em colapso e todas as formas de vida são extintas da face da terra.")
         
     }
     
