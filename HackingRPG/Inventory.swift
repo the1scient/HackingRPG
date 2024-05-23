@@ -11,7 +11,7 @@ func callInventory(quit: Bool) {
     
         var inventoryArray : [String] = []
     
-        type(texto: "Você quer consultar seu disco rígido?  [S/n]", tempo: speed)
+        type(texto: "Você quer consultar seu disco rígido?  [S/n]", time: speed)
         
         let userHDChoice = readLine()!
         

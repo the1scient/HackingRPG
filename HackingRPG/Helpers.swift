@@ -1,13 +1,13 @@
 import Foundation
 
-    func type(texto: String, tempo: Int) {
+    func type(texto: String, time: Int) {
         
        let fala = Array(texto)
        
        setbuf(__stdoutp, nil)
         for i in fala {
             print(i, terminator: "")
-            usleep(useconds_t(tempo))
+            usleep(useconds_t(time))
         }
         
         print("\n")
@@ -15,11 +15,11 @@ import Foundation
     }
     
     
-    func dots(quantidade: Int, tempo: Int) {
+    func dots(quantidade: Int, time: Int) {
         
         for _ in 1...quantidade {
             
-            usleep(useconds_t(tempo))
+            usleep(useconds_t(time))
             print("... \n")
             
         }
@@ -31,6 +31,9 @@ import Foundation
     }
 
   
+func separator() {
+    
+}
 
 
 extension String {

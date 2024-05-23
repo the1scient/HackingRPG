@@ -46,7 +46,7 @@ func quickSum(amount: Int, time: Int, chances: Int) {
             answer = userAnswer
             if sum == userAnswer {
                 
-                dots(quantidade: 5, tempo: 500000)
+                dots(quantidade: 5, time: 500000)
                 sleep(2)
                 clear()
                 
@@ -68,11 +68,11 @@ func quickSum(amount: Int, time: Int, chances: Int) {
 
 func engenhariaSocial() {
     
-    type(texto: " * É hora de invadir a GL Security... Vou precisar invadir a conta de algum leigo para ganhar acesso ao sistema. Depois eu vou precisar escalar meus privilégios para dominar os seus sistemas. Vai ser trabalhoso! *", tempo: speed)
+    type(texto: " * É hora de invadir a GL Security... Vou precisar invadir a conta de algum leigo para ganhar acesso ao sistema. Depois eu vou precisar escalar meus privilégios para dominar os seus sistemas. Vai ser trabalhoso! *", time: speed)
     
-    type(texto: "* Pesquisando sobre como invadir a GL Security, encontro o numero de celular do Coordenador de Finança de GL Security *", tempo: speed)
+    type(texto: "* Pesquisando sobre como invadir a GL Security, encontro o numero de celular do Coordenador de Finança de GL Security *", time: speed)
     
-    type(texto: "Você quer ligar ao Coordenador?    [S/n]", tempo: speed)
+    type(texto: "Você quer ligar ao Coordenador?    [S/n]", time: speed)
     
     let helpChoice = readLine()!
     
@@ -86,11 +86,11 @@ func engenhariaSocial() {
         
         sleep(2)
         
-        dots(quantidade: 10, tempo: 50000)
+        dots(quantidade: 10, time: 50000)
         
         clear()
         
-        type(texto: "- Alô? Quem é?", tempo: speed)
+        type(texto: "- Alô? Quem é?", time: speed)
         
         createChoice(
             choices: [
@@ -102,9 +102,9 @@ func engenhariaSocial() {
             repeats: false
         )
         
-        dots(quantidade: 2, tempo: speed)
+        dots(quantidade: 2, time: speed)
         
-        type(texto: "Por que você precisa da minha senha?", tempo: speed)
+        type(texto: "Por que você precisa da minha senha?", time: speed)
         
         createChoice(
             choices: [
@@ -117,9 +117,9 @@ func engenhariaSocial() {
             repeats: false
         )
         
-        dots(quantidade: 2, tempo: speed)
+        dots(quantidade: 2, time: speed)
         
-        type(texto: "Eu ainda não confio em você. Como posso saber que você é do Suporte de TI da minha empresa?", tempo: speed)
+        type(texto: "Eu ainda não confio em você. Como posso saber que você é do Suporte de TI da minha empresa?", time: speed)
         
         createChoice(
             choices: [
@@ -131,11 +131,11 @@ func engenhariaSocial() {
             wrongChoiceText: "Quê? Não consegui te ouvir direito. Você pode repetir o que acabou de falar?",
         repeats: true)
         
-        type(texto: "Okay, você pode ter minha senha então. \n Minha senha é 123456sete", tempo: speed)
+        type(texto: "Okay, você pode ter minha senha então. \n Minha senha é 123456sete", time: speed)
         
         // Inventário: conseguiu uma senha
         
-       type(texto: "* Agora que tenho a senha dele, preciso escalar meus privilégios dentro do sistema. Para isso, preciso hackear o computador do Administrador do Sistema *", tempo: speed)
+       type(texto: "* Agora que tenho a senha dele, preciso escalar meus privilégios dentro do sistema. Para isso, preciso hackear o computador do Administrador do Sistema *", time: speed)
 
         
     }
@@ -144,7 +144,7 @@ func engenhariaSocial() {
 
 func findSpecificKeyword(keyword: String, size: Int) {
     
-    type(texto: "Tente decifrar a senha do Administrador.", tempo: speed)
+    type(texto: "Tente decifrar a senha do Administrador.", time: speed)
     
     // criar array de numeros aleatorios.
     
@@ -209,9 +209,9 @@ func findSpecificKeyword(keyword: String, size: Int) {
     
     if userAttemptString.lowercased() != keyword {
     
-        dots(quantidade: 3, tempo: speed)
+        dots(quantidade: 3, time: speed)
         
-        type(texto: "Resposta errada! Tente novamente.", tempo: speed)
+        type(texto: "Resposta errada! Tente novamente.", time: speed)
         
         sleep(2)
         
@@ -238,10 +238,10 @@ func phishingEmail(stage: Int, mailItems: [Int]) {
         
     case 1:
         
-        type(texto: "1. [URGENTE] Informações sobre sua conta de luz", tempo: speed)
-        type(texto: "2. [URGENTE] Informações sobre seu carro", tempo: speed)
-        type(texto: "3. Preciso falar com você...", tempo: speed)
-        type(texto: "4. Você ganhou um bilhete premiado!", tempo: speed)
+        type(texto: "1. [URGENTE] Informações sobre sua conta de luz", time: speed)
+        type(texto: "2. [URGENTE] Informações sobre seu carro", time: speed)
+        type(texto: "3. Preciso falar com você...", time: speed)
+        type(texto: "4. Você ganhou um bilhete premiado!", time: speed)
         
         let userStageInput = Int(readLine()!)!
         
@@ -262,7 +262,7 @@ func phishingEmail(stage: Int, mailItems: [Int]) {
         
         Ansioso por sua resposta,
         Babafemi.
-        """, tempo: speed)
+        """, time: speed)
         
         
         type(texto: """
@@ -274,7 +274,7 @@ func phishingEmail(stage: Int, mailItems: [Int]) {
              
              Atenciosamente,
              Schweitzer Engineering Laboratories.
-         """, tempo: speed)
+         """, time: speed)
         
         
         type(texto: """
@@ -286,7 +286,7 @@ func phishingEmail(stage: Int, mailItems: [Int]) {
          
          Atenciosamente,
          Ford Motors.
-        """, tempo: speed)
+        """, time: speed)
         
         type(texto: """
         4. Caro(a) Sortudo(a),
@@ -297,7 +297,7 @@ func phishingEmail(stage: Int, mailItems: [Int]) {
         
         Atenciosamente,
         Venture Ashore.
-        """, tempo: speed)
+        """, time: speed)
         
         
         let userStageInput = Int(readLine()!)!
@@ -310,10 +310,10 @@ func phishingEmail(stage: Int, mailItems: [Int]) {
         
     case 3:
         
-        type(texto: "1. `virus_principe_nigeriano.pdf`", tempo: speed)
-        type(texto: "2. `trojan_bilhete_premiado.bat`", tempo: speed)
-        type(texto: "3. `informacoes_carro_cliente345.docx`", tempo: speed)
-        type(texto: "4. `conta_de_luz.pdf`", tempo: speed)
+        type(texto: "1. `virus_principe_nigeriano.pdf`", time: speed)
+        type(texto: "2. `trojan_bilhete_premiado.bat`", time: speed)
+        type(texto: "3. `informacoes_carro_cliente345.docx`", time: speed)
+        type(texto: "4. `conta_de_luz.pdf`", time: speed)
         
         
         let userStageInput = Int(readLine()!)!
@@ -360,17 +360,17 @@ func cesarCypher(attempts: Int) {
     
     print("[BILHETE POST-IT] ZdvkF0qi1g3qw14o!")
     
-    type(texto: "* Talvez isso tenha algo a ver com algum certo Imperador Romano... *", tempo: speed)
+    type(texto: "* Talvez isso tenha algo a ver com algum certo Imperador Romano... *", time: speed)
     
-    //type(texto: "WashC0nf1d3nt14l!", tempo: speed)
+    //type(texto: "WashC0nf1d3nt14l!", time: speed)
     
     let userCypherResponse = readLine()!
     
     if userCypherResponse.lowercased() != "washc0nf1d3nt14l!" {
         
-        type(texto: "Tentando acessar os sistemas...", tempo: speed)
+        type(texto: "Tentando acessar os sistemas...", time: speed)
         
-        type(texto: "Senha errada! Tente novamente.", tempo: speed)
+        type(texto: "Senha errada! Tente novamente.", time: speed)
         
         sleep(2)
         
@@ -419,10 +419,10 @@ func numberToKeyword(keyword: String, attempts: Int) {
     let userAnswer = readLine()!
     
     if userAnswer == keyword {
-        type(texto:"Você conseguiu completar o desafio com sucesso!" , tempo: speed)
+        type(texto:"Você conseguiu completar o desafio com sucesso!" , time: speed)
     }
     else {
-        type(texto: "Tente novamente. Chances restantes: \(attempts - 1)", tempo: speed)
+        type(texto: "Tente novamente. Chances restantes: \(attempts - 1)", time: speed)
         numberToKeyword(keyword: keyword, attempts: attempts - 1)
     }
     

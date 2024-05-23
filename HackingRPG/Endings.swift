@@ -3,15 +3,15 @@ import Foundation
 
 func arrested(text: String) {
     
-    dots(quantidade: 5, tempo: 50000)
+    dots(quantidade: 5, time: 50000)
     
     sleep(2)
     
     clear()
     
-    dots(quantidade: 5, tempo: 50000)
+    dots(quantidade: 5, time: 50000)
     
-    type(texto: text, tempo: 50000)
+    type(texto: text, time: 50000)
     
     gameOver()
     
@@ -19,7 +19,7 @@ func arrested(text: String) {
 
 func gameOver() {
     
-    type(texto: "> > > >  F I M   D E   J O G O  < < < <", tempo: 90000)
+    type(texto: "> > > >  F I M   D E   J O G O  < < < <", time: 90000)
     
     print("\n")
     
