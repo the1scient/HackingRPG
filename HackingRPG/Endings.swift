@@ -38,3 +38,12 @@ func gameOver() {
     }
     
 }
+
+func goodEnding() {
+    
+    
+    type(texto: "\(username), você conseguiu desativar os computadores centrais da Rússia.", time: speed)
+    type(texto: "A Rússia foi incapaz de enviar mísseis aos Estados Unidos...", time: speed)
+    
+    
+}

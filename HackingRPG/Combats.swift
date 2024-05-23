@@ -40,7 +40,10 @@ func quickSum(amount: Int, time: Int, chances: Int) {
                 print("Tempo esgotado!")
                 arrested(text: "Você foi preso pela Polícia.")
             }
+
         }
+
+        
         
         if let input = readLine(), let userAnswer = Int(input) {
             answer = userAnswer
@@ -336,7 +339,7 @@ func phishingEmail(stage: Int, mailItems: [Int]) {
             
         }
         else {
-            arrested(text: "Você foi preso pela Polícia Federal.")
+            arrested(text: "Você foi preso pela Polícia Federal em colaboração com a INTERPOL por tentar invadir o Pentágono.")
         }
         
     break

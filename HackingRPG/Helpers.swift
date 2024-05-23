@@ -187,7 +187,7 @@ type(texto: """
  [   11.810617] random: nonblocking pool is initialized
  [   11.849114] Driver for 1-wire Dallas network protocol.
  [   12.167722] i2c /dev entries driver
- """, tempo: 500)
+ """, time: 500)
     
     
 }
@@ -195,14 +195,14 @@ type(texto: """
 func createChoice(choices: [String], correct: Int, wrongChoiceText: String, repeats: Bool) {
     
     for i in choices {
-        type(texto: "\(i)", tempo: speed)
+        type(texto: "\(i)", time: speed)
     }
     
     
     let choice = Int(readLine()!)!
     
     if repeats == true && choice != correct {
-        type(texto: wrongChoiceText, tempo: speed)
+        type(texto: wrongChoiceText, time: speed)
         createChoice(choices: choices, correct: correct, wrongChoiceText: wrongChoiceText, repeats: repeats)
     }
     else if repeats == false && choice == correct {
@@ -238,9 +238,7 @@ func chooseSpeed() {
     
     speed = userSpeedChoice * 10000
     
-    print(speed)
-    
-    type(texto: "O texto ficará nessa velocidade. Você tem certeza de que deseja jogar com essa velocidade?   [S/n]", tempo: speed)
+    type(texto: "O texto ficará nessa velocidade. Você tem certeza de que deseja jogar com essa velocidade?   [S/n]", time: speed)
     
     let userNewSpeedChoice = readLine()!
     
