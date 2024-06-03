@@ -28,7 +28,7 @@ func quickSum(amount: Int, time: Int, chances: Int) {
         
         print(puzzle.joined(separator: " + "))
         
-        print(sum)
+       
         
         var answer: Int? = nil
         
@@ -53,10 +53,6 @@ func quickSum(amount: Int, time: Int, chances: Int) {
                 sleep(2)
                 clear()
                 
-                vpnUnlocked = true
-                vpnActive = false
-               
-                
             } else {
                 
                 quickSum(amount: 3, time: 5, chances: chances - 1)
@@ -75,7 +71,7 @@ func engenhariaSocial() {
     
     type(texto: "* Pesquisando sobre como invadir a GL Security, encontro o numero de celular do Coordenador de Finança de GL Security *", time: speed)
     
-    type(texto: "Você quer ligar ao Coordenador?    [S/n]", time: speed)
+    type(texto: "Você quer ligar ao Coordenador? Você deve persuadir ele a passar a senha de acesso ao sistema da GL Security.   [S/n]", time: speed)
     
     let helpChoice = readLine()!
     
@@ -140,6 +136,8 @@ func engenhariaSocial() {
         
        type(texto: "* Agora que tenho a senha dele, preciso escalar meus privilégios dentro do sistema. Para isso, preciso hackear o computador do Administrador do Sistema *", time: speed)
 
+        vpnUnlocked = true
+        
         
     }
 
@@ -217,34 +215,35 @@ func findSpecificKeyword(keyword: String, size: Int) {
         type(texto: "Resposta errada! Tente novamente.", time: speed)
         
         sleep(2)
-        
+
         clear()
         
         findSpecificKeyword(keyword: keyword, size: size)
         
-        
     }
-
-    
-    
-    
-    
 }
 
 
 
 func phishingEmail(stage: Int, mailItems: [Int]) {
+    sleep(2)
+    clear()
     
     var mailItems = mailItems
     
     switch stage {
         
     case 1:
-        
+        print("Selecione o título do e-mail a ser enviado: ")
+        separator()
         type(texto: "1. [URGENTE] Informações sobre sua conta de luz", time: speed)
         type(texto: "2. [URGENTE] Informações sobre seu carro", time: speed)
         type(texto: "3. Preciso falar com você...", time: speed)
         type(texto: "4. Você ganhou um bilhete premiado!", time: speed)
+        
+        separator()
+        
+        print("Digite sua escolha: \n")
         
         let userStageInput = Int(readLine()!)!
         
@@ -255,7 +254,8 @@ func phishingEmail(stage: Int, mailItems: [Int]) {
         break
         
     case 2:
-        
+        print("Selecione o corpo do e-mail a ser enviado: ")
+        separator()
         type(texto: """
         1. Caro(a) Amigo(a),
         
@@ -266,6 +266,8 @@ func phishingEmail(stage: Int, mailItems: [Int]) {
         Ansioso por sua resposta,
         Babafemi.
         """, time: speed)
+        
+        separator()
         
         
         type(texto: """
@@ -279,6 +281,7 @@ func phishingEmail(stage: Int, mailItems: [Int]) {
              Schweitzer Engineering Laboratories.
          """, time: speed)
         
+        separator()
         
         type(texto: """
          3. Prezado(a) Cliente,
@@ -291,6 +294,8 @@ func phishingEmail(stage: Int, mailItems: [Int]) {
          Ford Motors.
         """, time: speed)
         
+        separator()
+        
         type(texto: """
         4. Caro(a) Sortudo(a),
         
@@ -302,6 +307,10 @@ func phishingEmail(stage: Int, mailItems: [Int]) {
         Venture Ashore.
         """, time: speed)
         
+        separator()
+        
+        print("Digite sua escolha: \n")
+        
         
         let userStageInput = Int(readLine()!)!
         
@@ -312,12 +321,16 @@ func phishingEmail(stage: Int, mailItems: [Int]) {
         break
         
     case 3:
-        
+        print("Selecione o arquivo a ser anexado no e-mail enviado: ")
+        separator()
         type(texto: "1. `virus_principe_nigeriano.pdf`", time: speed)
         type(texto: "2. `trojan_bilhete_premiado.bat`", time: speed)
         type(texto: "3. `informacoes_carro_cliente345.docx`", time: speed)
         type(texto: "4. `conta_de_luz.pdf`", time: speed)
         
+        separator()
+        
+        print("Digite sua escolha: \n")
         
         let userStageInput = Int(readLine()!)!
         
@@ -334,8 +347,6 @@ func phishingEmail(stage: Int, mailItems: [Int]) {
         let mailString = mailItemsString.joined(separator: "")
         
         if mailString == "124" || mailString == "233" {
-            
-            
             
         }
         else {
@@ -361,7 +372,7 @@ func cesarCypher(attempts: Int) {
         
     }
     
-    print("[BILHETE POST-IT] ZdvkF0qi1g3qw14o!")
+    print("[SENHA CRIPTOGRAFADA] ZdvkF0qi1g3qw14o!")
     
     type(texto: "* Talvez isso tenha algo a ver com algum certo Imperador Romano... *", time: speed)
     

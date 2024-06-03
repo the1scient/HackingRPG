@@ -23,27 +23,20 @@ func gameOver() {
     
     print("\n")
     
-    print("Deseja jogar novamente?   [S/n]")
-    
-    let playAgain = readLine()
-    
-    if playAgain == "S" || playAgain == "s" {
-        
-        start()
-        
-    }
-    else {
-        print("Créditos: Guilherme Fabbri, Luisiana Ramirez")
-        exit(0);
-    }
+    print("Créditos: Guilherme Fabbri, Luisiana Ramirez")
+    exit(0);
     
 }
 
 func goodEnding() {
-    
-    
+    dots(quantidade: 10, time: speed)
+    clear()
     type(texto: "\(username), você conseguiu desativar os computadores centrais da Rússia.", time: speed)
     type(texto: "A Rússia foi incapaz de enviar mísseis aos Estados Unidos...", time: speed)
+    separator()
+    print("\n\n")
+    type(texto: "Você salvou o mundo!".green(), time: speed)
+    gameOver()
     
     
 }

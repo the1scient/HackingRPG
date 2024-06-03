@@ -14,9 +14,10 @@ import Foundation
         
     }
     
+
+
     
     func dots(quantidade: Int, time: Int) {
-        
         for _ in 1...quantidade {
             
             usleep(useconds_t(time))
@@ -32,7 +33,7 @@ import Foundation
 
   
 func separator() {
-    
+    print("______________________________________")
 }
 
 
@@ -249,6 +250,8 @@ func chooseSpeed() {
         chooseSpeed()
     }
     
+    clear()
+    
 }
 
 
@@ -256,7 +259,13 @@ func verifyVpn(arrestedText: String) {
     
     if vpnActive == false {
         
+        print(vpnActive)
+        
         arrested(text: arrestedText)
+        
+    }
+    
+    else {
         
     }
     
