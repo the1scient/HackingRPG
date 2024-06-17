@@ -372,15 +372,16 @@ func cesarCypher(attempts: Int) {
         
     }
     
-    print("[SENHA CRIPTOGRAFADA] ZdvkF0qi1g3qw14o!")
+    print("[SENHA CRIPTOGRAFADA] whvwh123")
     
     type(texto: "* Talvez isso tenha algo a ver com algum certo Imperador Romano... *", time: speed)
+    type(texto: "* Isso é claramnete uma cifra de césar com 3 casas! *", time: speed)
     
     //type(texto: "WashC0nf1d3nt14l!", time: speed)
     
     let userCypherResponse = readLine()!
     
-    if userCypherResponse.lowercased() != "washc0nf1d3nt14l!" {
+    if userCypherResponse.lowercased() != "teste123" {
         
         type(texto: "Tentando acessar os sistemas...", time: speed)
         
